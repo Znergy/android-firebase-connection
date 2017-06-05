@@ -1,5 +1,6 @@
 package com.znergy.firebasepractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             /** After creating a user object, we then save to firebase by calling the
              * saveToFirebase() method */
             saveToFirebase(user);
+
+            Intent intent = new Intent(MainActivity.this, UserListActivity.class);
+            startActivity(intent);
         }
     }
 

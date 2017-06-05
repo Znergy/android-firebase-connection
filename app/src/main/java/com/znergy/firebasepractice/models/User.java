@@ -10,6 +10,9 @@ public class User {
     private String email;
     private String phoneNumber;
 
+    /** Without the empty constructor errors will be thrown */
+    public User() { }
+
     public User(String firstName, String lastName, String email, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
